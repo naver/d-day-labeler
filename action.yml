@@ -1,0 +1,9 @@
+name: "Update D-n Labels"
+description: "Automatically updates labels based on the D-n rule."
+inputs:
+  token:
+    description: "GitHub token"
+    required: true
+runs:
+  using: "node16"
+  main: "dist/index.js"
