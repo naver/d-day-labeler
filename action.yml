@@ -1,5 +1,8 @@
 name: "Update D-n Labels"
 description: "Automatically updates labels based on the D-n rule."
+branding:
+  icon: "calendar"
+  color: "red"
 inputs:
   token:
     description: "GitHub token"
