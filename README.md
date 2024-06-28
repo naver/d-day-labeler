@@ -23,7 +23,7 @@ jobs:
     runs-on: [ubuntu-latest]
     steps:
       - name: Update D-n Labels
-        uses: naver/d-day-labeler/@latest
+        uses: naver/d-day-labeler@latest
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
