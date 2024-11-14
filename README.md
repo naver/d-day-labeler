@@ -28,7 +28,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-2. 원하는 PR 또는 이슈에 D-n (예: D-5, D-3 등) 형식의 Label 을 추가합니다.
+2. 원하는 PR에 D-n (예: D-5, D-3 등) 형식의 Label 을 추가합니다.
 3. GitHub Actions가 매일 자동으로 해당 Label 을 업데이트합니다.
 
 ## Inputs
