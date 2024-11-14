@@ -1,7 +1,11 @@
 # d-day-labeler
+
+🌏 한국어 | [**English**](README.en.md)
+
 D-n 규칙에 따라 자동으로 Label 을 업데이트하는 Github Actions
 
 ## D-n 룰이란?
+
 코드 리뷰가 완료되어야 하는 시점을 D-n 형식의 Label 을 PR 에 추가해 표현하는 방식입니다.
 이를 통해 리뷰어는 리뷰 우선순위를 쉽게 판단하고 효율적으로 작업할 수 있습니다.
 
