@@ -30,6 +30,7 @@ jobs:
         uses: naver/d-day-labeler@latest
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          skipDraft: true # Set to true to skip draft PRs (optional)
 ```
 
 2. Add a `D-n` label (e.g., `D-5`, `D-3`) to a PR.
@@ -40,6 +41,10 @@ jobs:
 ### `token`
 
 **Required** GitHub token
+
+### `skipDraft`
+
+**Optional** Determines whether to skip draft PRs when updating labels. Default: `false`
 
 ## License
 ```

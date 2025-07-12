@@ -30,6 +30,7 @@ jobs:
         uses: naver/d-day-labeler@latest
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          skipDraft: true # Draft PR을 건너뛰려면 true로 설정 (선택사항)
 ```
 
 2. 원하는 PR에 D-n (예: D-5, D-3 등) 형식의 Label 을 추가합니다.
@@ -40,6 +41,10 @@ jobs:
 ### `token`
 
 **Required** GitHub에서 제공하는 토큰
+
+### `skipDraft`
+
+**Optional** Draft PR을 라벨 업데이트에서 제외할지 여부를 결정합니다. 기본값: `false`
 
 ## License
 ```
