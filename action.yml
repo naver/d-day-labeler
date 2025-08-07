@@ -7,6 +7,10 @@ inputs:
   token:
     description: "GitHub token"
     required: true
+  skipDraft:
+    description: "Skip draft PRs when updating labels"
+    required: false
+    default: "false"
 runs:
   using: "node16"
   main: "dist/index.js"

@@ -15,4 +15,5 @@ export const initialize = (): void => {
     const octokit = github.getOctokit(token);
 
     global.octokit = octokit;
+    global.skipDraft = core.getInput("skipDraft") === "true";
 };

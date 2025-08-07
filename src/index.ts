@@ -50,6 +50,14 @@ const updateLabels = async (changes: ILabelChange[]): Promise<boolean[]> => {
 
 const extractLabelChanges = (prList: TPRListData): ILabelChange[] => {
     return prList
+        .filter(pr => {
+            // Skip draft PRs if the skipDraft option is enabled
+            if (global.skipDraft && pr.draft) {
+                core.info(`Skipping draft PR #${pr.number}`);
+                return false;
+            }
+            return true;
+        })
         .map(({number, labels}) => ({
             number,
             dLabel: labels.find(({name}) => D_N_PATTERN.test(name))?.name,
